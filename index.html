@@ -3,24 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agent.Ilova</title>
+    <title>Agent-ilova</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
     <div class="container">
-        <div class="market-box">
-            <input type="text" class="market-name" id="market-name" placeholder="Do'kon nomi" minlength="8" maxlength="1024">
-            <input type="text" class="agent-name" id="agent-name" placeholder="Agent ismi" inlength="8" maxlength="1024">
+        <div class="name-space">
+            <input type="text" placeholder="Do'kon nomi">
+            <input type="text" placeholder="Agent Ismi">
         </div>
-        <div class="market-product">
+
+        <div class="product-space">
             <select name="product" id="product-1">
-                <label for=""> Nestle Mahsulotlari</label>
-                <option value="Shokolad">Shokolad</option>
-                <option value="Sut">Sut</option>
-                <option value="Kasha">Kasha</option>
+                <option value="mahsulot-1">Mahsulot-1</option>
+                <option value="mahsulot-2">Mahsulot-2</option>
             </select>
-            <input type="namber" id="product-amount"  placeholder="mahsulot miqdorini kiriting" inlength="8" maxlength="1024">
-            <input type="text" id="product-price">
+
+            <input type="number" placeholder="Mahsulot miqdorini kiriting">
+            <input type="number" placeholder="Mahsulot summasi">
+            <button class="add-product" id="add-product">+</button>
         </div>
+        
+        <div class="payment-container">
+            <input type="text" placeholder="Do'kon raqamini kiriting" minlength="4" maxlength="1024">
+            <input type="text" placeholder="Umumiy summani kiriting" minlength="8" maxlength="1014">
+            <select name="paymet-type" id="paymet-type">
+                <option value="Naqd">Naqd</option>
+                <option value="Karta">Karta</option>
+                <option value="Pul o'tkazish">Pul o'tkazish</option>
+            </select>
+        </div>
+
+        <div class="send-box">
+            <button>Omborga yuborish</button>
+        </div>
+
     </div>
+
+    <script src="main.js"></script>
+
 </body>
 </html>
