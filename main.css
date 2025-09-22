@@ -11,7 +11,6 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #f5f7fa ;
-
 }
 
 .container{
@@ -69,4 +68,26 @@ input{
     font-size: 14px;
     font-weight: 900;
     font-family: 'Courier New';
+}
+
+#product-space {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border: 1px solid #c3cfe2; 
+    padding: 10px;
+    box-sizing: border-box;
+    max-height: 250px; 
+    overflow-y: auto; 
+}
+
+
+.product-item {
+    flex: 1 1 200px; 
+    border: 1px solid #c3cfe2;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: white;
 }
