@@ -1,10 +1,12 @@
-{
-    "talaba":[
-        {"id": 1, "ism": "Humoyun", "familya": "Sobirjonov", "email": "humoyun@gmail.com"},
-        {"id": 2, "ism": "Rahmonberdi", "familya": "Adashaliyev", "email": "rahmonberdi@gmail.com"}
-    ],
-    "maxsulot": [
-        {"id": 1, "nomi": "Noutbuk", "narxi": 500},
-        {"id":2, "nomi": "telefon", "narxi": 100}
-    ]
-}
+[
+    { "id": 1, "name": "CocaCola"}, 
+    { "id": 2, "name": "Sprite"}, 
+    { "id": 3, "name": "Pepsi"}, 
+    { "id": 4, "name": "Fanta"}, 
+    { "id": 5, "name": "Flesh"}, 
+    { "id": 6, "name": "Adrenalin"}, 
+    { "id": 7, "name": "Gorilla"}, 
+    { "id": 8, "name": "Sayhun"}, 
+    { "id": 9, "name": "Santal"}, 
+    { "id": 10, "name": "Dinay"}
+]
