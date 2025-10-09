@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,53 +7,43 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <div>
-        <div class="buttons-area">
-            <button><a href="Agentqosh.html" style="text-decoration: none; color: black;">Agent qo'shish</a></button>
-            <button> <a href="Mahsulotqosh.html" style="text-decoration: none; color: black;">Maxsulot qo'shish</a></button>
+
+    <div class="top-buttons">
+        <button onclick="window.open('Mahsulotqosh.html', '_blank')">Mahsulot qo'shish</button>
+        <button onclick="window.open('Agentqosh.html', '_blank')">Agent qo'shish</button>
+    </div>
+
+    <!-- Asosiy forma -->
+    <form class="container">
+        <div class="name-space">
+            <input type="text" placeholder="Do'kon nomi">
+            <input type="text" placeholder="Agent Ismi">
         </div>
 
-        <form class="container">
-            <div class="name-space">
-                <input type="text" placeholder="Do'kon nomi">
-                <input type="text" placeholder="Agent Ismi">
+        <div class="product-area" id="product-space">
+            <div class="product-space">
+                <select name="product" id="product-1"></select>
+                <input type="number" placeholder="Mahsulot miqdorini kiriting">
+                <input type="number" placeholder="Mahsulot summasi">
+                <div class="add-product" id="add-product">+</div>
             </div>
+        </div>
+        
+        <div class="payment-container">
+            <input type="text" placeholder="Do'kon raqamini kiriting">
+            <input type="text" placeholder="Umumiy summani kiriting">
+            <select name="paymet-type" id="paymet-type">
+                <option value="Naqd">Naqd</option>
+                <option value="Karta">Karta</option>
+                <option value="Pul o'tkazish">Pul o'tkazish</option>
+            </select>
+        </div>
 
-            <div class="product-area" id="product-space">
-                
+        <div class="send-box">
+            <button class="send-btn">Omborga yuborish</button>
+        </div>
+    </form>
 
-                <div class="product-space">
-                    <select name="product" id="product-1">
-                    
-                    </select>
-
-                    <input type="number" placeholder="Mahsulot miqdorini kiriting">
-                    <input type="number" placeholder="Mahsulot summasi">
-                    <div class="add-product" id="add-product">+</div>
-                </div>
-                
-            </div>
-            
-            <div class="payment-container">
-                <input type="text" placeholder="Do'kon raqamini kiriting" minlength="0" maxlength="1024">
-                <input type="text" placeholder="Umumiy summani kiriting" minlength="0" maxlength="1014">
-                <select name="paymet-type" id="paymet-type">
-                    <option value="Naqd">Naqd</option>
-                    <option value="Karta">Karta</option>
-                    <option value="Pul o'tkazish">Pul o'tkazish</option>
-                </select>
-            </div>
-
-            <div class="send-box">
-                <button class="send-btn">Omborga yuborish</button>
-            </div>
-
-        </form>
-    </div>
-   
-
-    <script src="main.js">
-    </script>
-
+    <script src="main.js"></script>
 </body>
 </html>

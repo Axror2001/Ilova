@@ -1,26 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agent qo'shish</title>
-    <link rel="stylesheet" href="../main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent qoshish</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      min-height: 100vh;
+      margin: 0;
+      padding-top: 50px;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      background: #fff;
+      width: 350px;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #444;
+    }
+
+    input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      font-size: 15px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    input:focus {
+      border-color: #4a90e2;
+      box-shadow: 0 0 5px rgba(74,144,226,0.4);
+    }
+
+    button {
+      background: #4a90e2;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #357abd;
+    }
+  </style>
 </head>
 <body>
 
-    <div>
-        <h1 style="text-align: center; margin-bottom: 20px;">Agent qo'shish</h1>
-        <div class="aganet-container">
-            <input type="text" placeholder="Agent ismi">
-            <input type="text" placeholder="Agent yoshi">
-            <input type="number" placeholder="Agent telefon raqami">
-            <input type="text" placeholder="Agent foydalanuvchi nomi">
+  <h1>Agent qo'shish</h1>
 
-            <button class="add-user">Agentni qo'shish</button>
-        </div>
-    </div>
+  <div class="container">
+    <label for="ism">Agent ismi</label>
+    <input type="text" id="ism" placeholder="Agent ismini kiriting">
 
-    
-    
+    <label for="yosh">Agent yoshi</label>
+    <input type="number" id="yosh" placeholder="Agent yoshini kiriting">
+
+    <label for="telefon">Agent telefon raqami</label>
+    <input type="tel" id="telefon" placeholder="+998 xx xxx xx xx">
+
+    <label for="foydalanuvchi">Agent foydalanuvchi nomi</label>
+    <input type="text" id="foydalanuvchi" placeholder="Foydalanuvchi nomi">
+
+    <button type="submit">Agent qo'shish</button>
+  </div>
+
 </body>
 </html>
