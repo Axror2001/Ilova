@@ -7,42 +7,50 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <form class="container">
-        <div class="name-space">
-            <input type="text" placeholder="Do'kon nomi">
-            <input type="text" placeholder="Agent Ismi">
+    <div>
+        <div class="buttons-area">
+            <button><a href="Agentqosh.html" style="text-decoration: none; color: black;">Agent qo'shish</a></button>
+            <button> <a href="Mahsulotqosh.html" style="text-decoration: none; color: black;">Maxsulot qo'shish</a></button>
         </div>
 
-        <div class="product-area" id="product-space">
-            
+        <form class="container">
+            <div class="name-space">
+                <input type="text" placeholder="Do'kon nomi">
+                <input type="text" placeholder="Agent Ismi">
+            </div>
 
-            <div class="product-space">
-                <select name="product" id="product-1">
+            <div class="product-area" id="product-space">
                 
-                </select>
 
-                <input type="number" placeholder="Mahsulot miqdorini kiriting">
-                <input type="number" placeholder="Mahsulot summasi">
-                <div class="add-product" id="add-product">+</div>
+                <div class="product-space">
+                    <select name="product" id="product-1">
+                    
+                    </select>
+
+                    <input type="number" placeholder="Mahsulot miqdorini kiriting">
+                    <input type="number" placeholder="Mahsulot summasi">
+                    <div class="add-product" id="add-product">+</div>
+                </div>
+                
             </div>
             
-        </div>
-        
-        <div class="payment-container">
-            <input type="text" placeholder="Do'kon raqamini kiriting" minlength="0" maxlength="1024">
-            <input type="text" placeholder="Umumiy summani kiriting" minlength="0" maxlength="1014">
-            <select name="paymet-type" id="paymet-type">
-                <option value="Naqd">Naqd</option>
-                <option value="Karta">Karta</option>
-                <option value="Pul o'tkazish">Pul o'tkazish</option>
-            </select>
-        </div>
+            <div class="payment-container">
+                <input type="text" placeholder="Do'kon raqamini kiriting" minlength="0" maxlength="1024">
+                <input type="text" placeholder="Umumiy summani kiriting" minlength="0" maxlength="1014">
+                <select name="paymet-type" id="paymet-type">
+                    <option value="Naqd">Naqd</option>
+                    <option value="Karta">Karta</option>
+                    <option value="Pul o'tkazish">Pul o'tkazish</option>
+                </select>
+            </div>
 
-        <div class="send-box">
-            <button class="send-btn">Omborga yuborish</button>
-        </div>
+            <div class="send-box">
+                <button class="send-btn">Omborga yuborish</button>
+            </div>
 
-    </form>
+        </form>
+    </div>
+   
 
     <script src="main.js">
     </script>

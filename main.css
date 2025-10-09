@@ -15,15 +15,16 @@ body{
 }
 
 .container{
-    width: 70%;
-    height: 70%;
+    width: 1000px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 5px solid #c3cfe2;
     border-radius: 20px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
+
 
 input{
     width: 300px;
@@ -77,4 +78,105 @@ input{
 .product-space{
     display: flex;
     align-items: center;
+}
+
+
+
+/* Bu Agent qo'shish html ning stillari */
+
+.aganet-container{
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.aganet-container input{
+    width: 250px;
+    background-color: rgb(41, 136, 226);
+    border-color: black;
+
+    font-size: 16px;
+    color: black;
+    border-radius: 10px;
+    
+}
+
+.aganet-container input::placeholder{
+    color: black;
+}
+
+.add-user{
+    width: 150px;
+    height: 40px;
+    background-color: rgba(23, 216, 23, 0.929);
+
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+
+}
+
+/* Maxsulot qo'shish html file stillari */
+
+.goods-container{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.goods-container input{
+    width: 150px;
+    height: 40px;
+    background-color: rgba(237, 245, 97, 0.929);
+
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+}
+
+.add-goods{
+    width: 150px;
+    height: 40px;
+    background-color: rgba(23, 216, 23, 0.929);
+
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+}
+
+.goods-container input::placeholder{
+    color: black;
+}
+
+.buttons-area{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 0 auto;
+}
+
+.buttons-area button{
+    width: 150px;
+    height: 40px;
+    background-color: #a9e647ed;
+
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+
+    margin: 10px;
 }
