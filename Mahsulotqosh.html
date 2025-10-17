@@ -4,80 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mahsulot qo'shish</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f3f6fa;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 60px;
-      margin: 0;
-    }
-
-    h1 {
-      color: #333;
-      margin-bottom: 30px;
-      font-size: 28px;
-    }
-
-    .container {
-      background: #fff;
-      width: 350px;
-      padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    label {
-      font-weight: bold;
-      color: #444;
-    }
-
-    input {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 15px;
-      outline: none;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    input:focus {
-      border-color: #4a90e2;
-      box-shadow: 0 0 5px rgba(74,144,226,0.4);
-    }
-
-    button {
-      background: #4a90e2;
-      color: white;
-      border: none;
-      padding: 12px;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background: #357abd;
-    }
-  </style>
+   <link rel="stylesheet" href="maxsulot.css">
 </head>
 <body>
 
   <h1>Mahsulot qo'shish</h1>
 
-  <div class="container">
+  <div class="mainbox">
     <label for="id">Mahsulot ID</label>
-    <input type="text" id="id" placeholder="Masalan: 001">
+    <input type="text" id="id" class="mahsulot" placeholder="Masalan: 001">
 
     <label for="nomi">Mahsulot nomi</label>
-    <input type="text" id="nomi" placeholder="Masalan: Shakar">
+    <input type="text" id="nomi" class="mahsulot" placeholder="Masalan: Shakar">
 
     <button type="submit">Mahsulot qo'shish</button>
   </div>

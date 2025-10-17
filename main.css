@@ -15,6 +15,7 @@ body {
     padding-top: 20px;
 }
 
+/* yuqoridagi tugmalar */
 .top-buttons {
     display: flex;
     justify-content: center;
@@ -37,6 +38,7 @@ body {
     background: #1d4ed8;
 }
 
+/* asosiy container */
 .container {
     width: 70%;
     height: 70%;
@@ -50,6 +52,7 @@ body {
     padding: 20px;
 }
 
+/* inputlar */
 input {
     width: 300px;
     height: 40px;
@@ -61,6 +64,7 @@ input {
     text-align: center;
 }
 
+/* boshqa tugmalar va joylashuv */
 #product-1, #paymet-type, .product-select {
     width: 150px;
     height: 40px;
